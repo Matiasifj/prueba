@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MIS Cerro Navia</title>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assest/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+           <div><img src="../assest/img/MIS CN.jpg" width="50" height="50"></div> 
+          <div ><h1>Mision de La Iglesa Del Señor Cerro Navia</h1></div>  
+        </div>
+    </header>
+    
+    <section class="section">
+            <div class="content">
+                <div>
+                        <input type="checkbox" id="btn-menu" />
+                        <label for="btn-menu"><i class="fa fa-bars"></i></label>
+                        <div class="icons">  <!-- RRSS -->
+                                <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a> 
+                                <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a> 
+                                <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a> 
+                            </div>
+                      <nav class="menu">  <!-- Menu -->
+                        <ul>
+                              <li><a href="../index.html">INICIO</a></li>
+                              <li><a href="./nosotros.html">NOSOTROS</a></li>
+                              <li><a href="./contacto.html">CONTACTO</a></li>
+                              <li><a href="./ubicacion.html">UBICACION</a></li>
+                        </ul>
+                        </nav>
+                 </div>
+
+<!-- codigo de formulario -->
+
+        <div>
+                <form action="send.php" method="post"" name="contacto" id ="contacto" > 
+
+                        Nombre completo <input name="nombre" type="text" id="nombre completo"size="30" maxlength="100"> 
+                        <br> 
+                        <br> 
+                        Correo electronico <input name="email" type="text" onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" size="25" maxlength="100" > 
+                        <br> 
+                        <br> 
+                        Población <input name="poblacion" type="text" onBlur="MM_validateForm('poblacion','','R');return document.MM_returnValue" size="20" maxlength="60"> 
+                        <br> 
+                        <br> 
+                        Sexo 
+                        <br> 
+                        <br> 
+                        <input type="radio" name="GrupoOpciones1" value="1"id="GrupoOpciones1_0" /> 
+                        Hombre 
+                        <br> 
+                        <input type="radio" name="GrupoOpciones1" value="2"id="GrupoOpciones1_1"/> Mujer 
+                        <br> 
+                        <br> 
+                        Aficiones 
+                        <br> 
+                        
+                        <textarea cols="50" rows="5" name="comentarios"></textarea> 
+                        <br> 
+                        <br> 
+                        Que opina de nuestra pagina 
+                        <br> 
+                        <br> 
+                        <input type="radio" name="GrupoOpciones2" value="mucho" >me ha gustado mucho 
+                        <br> 
+                        <input type="radio" name="GrupoOpciones2" value="regular" >no esta mal 
+                        <br> 
+                        <input type="radio" name="GrupoOpciones2" value="mal" >no me ha gustado nada 
+                        <br> 
+                        <br> 
+                        Danos tu opinion 
+                        <br> 
+                        <textarea cols="50" rows="5" name="opinion"></textarea> 
+                        <br> 
+                        <br> 
+                        <input type="submit" value="Enviar formulario"> 
+                        <input type="Reset" value="Borrar datos"> 
+                        
+                        </form> 
+                        </table> 
+        </div>
+
+</body>
